@@ -1,0 +1,65 @@
+generated: '2026-10-20'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+vocabulary:
+  name: peptidelibrary-app Domain Vocabulary
+  description: 'Terms declared by peptidelibrary-app''s own API contract: its resource groups, objects and enumerations, with the contract''s
+    definitions. Derived, not authored.'
+  version: '2026-10-20'
+  terms:
+  - term: Api
+    definition: 'Resource group in the contract; its operation GET /v1: API index'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+  - term: Categories
+    definition: 'Resource group in the contract; its operation GET /v1/categories: Research categories'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+  - term: Health
+    definition: 'Resource group in the contract; its operation GET /v1/health: Health check'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+  - term: Peptides
+    definition: 'Resource group in the contract; its operation GET /v1/peptides: List and search peptides'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+  - term: Prices
+    definition: 'Resource group in the contract; its operation GET /v1/prices: List prices'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+  - term: Products
+    definition: 'Resource group in the contract; its operation GET /v1/products: List products'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+  - term: Regulatory Status
+    definition: 'Resource group in the contract; its operation GET /v1/regulatory-status/{slug}: Regulatory status of a peptide'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+  - term: Research Areas
+    definition: 'Resource group in the contract; its operation GET /v1/research-areas: Research areas'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+  - term: Search
+    definition: 'Resource group in the contract; its operation GET /v1/search: Search peptides and educational content'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+  - term: Studies
+    definition: 'Resource group in the contract; its operation GET /v1/studies: List studies'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+  - term: Vendors
+    definition: 'Resource group in the contract; its operation GET /v1/vendors: List vendors'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml

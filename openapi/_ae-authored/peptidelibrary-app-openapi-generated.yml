@@ -1,0 +1,351 @@
+openapi: 3.1.0
+info:
+  title: peptidelibrary-app API
+  version: '2026-10-20'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-20: 21 operation(s) read from 5 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; peptidelibrary-app has published no machine-readable contract
+    that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 20
+    pages-with-code: 5
+    pages-read: 5
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-20'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://peptidelibrary.app/developers/playground?endpoint=search
+  - https://peptidelibrary.app/developers/playground?endpoint=getStudy
+  - https://peptidelibrary.app/developers/playground?endpoint=getHealth
+  - https://peptidelibrary.app/developers/playground?endpoint=getVendor
+  - https://peptidelibrary.app/developers/playground?endpoint=getPeptide
+servers:
+- url: https://api.peptidelibrary.app
+paths:
+  /v1:
+    get:
+      operationId: get_v1
+      tags:
+      - Api
+      summary: API index
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/categories:
+    get:
+      operationId: get_v1_categories
+      tags:
+      - Categories
+      summary: Research categories
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/health:
+    get:
+      operationId: get_v1_health
+      tags:
+      - Health
+      summary: Health check
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/peptides:
+    get:
+      operationId: get_v1_peptides
+      tags:
+      - Peptides
+      summary: List and search peptides
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/peptides/{slug}:
+    get:
+      operationId: get_v1_peptides_slug
+      tags:
+      - Peptides
+      summary: Get a peptide research profile
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      parameters:
+      - name: slug
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/peptides/{slug}/research:
+    get:
+      operationId: get_v1_peptides_slug_research
+      tags:
+      - Peptides
+      summary: Research summary for a peptide
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      parameters:
+      - name: slug
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/peptides/{slug}/studies:
+    get:
+      operationId: get_v1_peptides_slug_studies
+      tags:
+      - Peptides
+      summary: Studies cited by a peptide profile
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      parameters:
+      - name: slug
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/prices:
+    get:
+      operationId: get_v1_prices
+      tags:
+      - Prices
+      summary: List prices
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/prices/compare:
+    get:
+      operationId: get_v1_prices_compare
+      tags:
+      - Prices
+      summary: Compare prices for a peptide
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/products:
+    get:
+      operationId: get_v1_products
+      tags:
+      - Products
+      summary: List products
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/products/{id}:
+    get:
+      operationId: get_v1_products_id
+      tags:
+      - Products
+      summary: Get a product
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/regulatory-status/{slug}:
+    get:
+      operationId: get_v1_regulatory_status_slug
+      tags:
+      - Regulatory Status
+      summary: Regulatory status of a peptide
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      parameters:
+      - name: slug
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/research-areas:
+    get:
+      operationId: get_v1_research_areas
+      tags:
+      - Research Areas
+      summary: Research areas
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/search:
+    get:
+      operationId: get_v1_search
+      tags:
+      - Search
+      summary: Search peptides and educational content
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/studies:
+    get:
+      operationId: get_v1_studies
+      tags:
+      - Studies
+      summary: List studies
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/studies/{id}:
+    get:
+      operationId: get_v1_studies_id
+      tags:
+      - Studies
+      summary: Get a study
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/vendors:
+    get:
+      operationId: get_v1_vendors
+      tags:
+      - Vendors
+      summary: List vendors
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/vendors/{id}:
+    get:
+      operationId: get_v1_vendors_id
+      tags:
+      - Vendors
+      summary: Get a vendor
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/vendors/{id}/prices:
+    get:
+      operationId: get_v1_vendors_id_prices
+      tags:
+      - Vendors
+      summary: A vendor's prices
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/vendors/{id}/products:
+    get:
+      operationId: get_v1_vendors_id_products
+      tags:
+      - Vendors
+      summary: Products a vendor lists
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v1/vendors/{id}/shipping:
+    get:
+      operationId: get_v1_vendors_id_shipping
+      tags:
+      - Vendors
+      summary: Vendor shipping destinations
+      x-source: https://peptidelibrary.app/developers/playground?endpoint=search
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+tags:
+- name: Api
+- name: Categories
+- name: Health
+- name: Peptides
+- name: Prices
+- name: Products
+- name: Regulatory Status
+- name: Research Areas
+- name: Search
+- name: Studies
+- name: Vendors

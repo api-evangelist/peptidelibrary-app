@@ -1,0 +1,56 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.peptidelibrary.app
+  found_by:
+  - apis[]
+  - probed
+  - site-links
+  - spec-found
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - api
+  - spec
+  registrable_domain: peptidelibrary.app
+  role: api
+  relation: own
+- host: peptidelibrary.app
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - spec-found
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - Support
+  - PrivacyPolicy
+  - Login
+  - DeveloperPortal
+  - ChangeLog
+  - Blog
+  - APIReference
+  - Website
+  serves:
+  - docs
+  - spec
+  - hosting
+  vendor: netlify
+  registrable_domain: peptidelibrary.app
+  role: website
+  relation: own

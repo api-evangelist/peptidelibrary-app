@@ -1,0 +1,36 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://api.peptidelibrary.app/v1",
+      "service-desc": [
+        {
+          "href": "https://api.peptidelibrary.app/openapi.json",
+          "type": "application/vnd.oai.openapi+json;version=3.1"
+        },
+        {
+          "href": "https://api.peptidelibrary.app/openapi.yaml",
+          "type": "application/vnd.oai.openapi;version=3.1"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://peptidelibrary.app/developers/docs",
+          "type": "text/html"
+        }
+      ],
+      "service-meta": [
+        {
+          "href": "https://peptidelibrary.app/developers/changelog",
+          "type": "text/html",
+          "title": "Peptide Library API 1.0.0"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://api.peptidelibrary.app/v1/health",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}

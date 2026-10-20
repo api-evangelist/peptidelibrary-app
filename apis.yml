@@ -1,23 +1,106 @@
 aid: peptidelibrary-app
+
 name: peptidelibrary-app
-description: 'peptidelibrary-app is a company surfaced via the API Evangelist harvest backlog (source:
-  new-submission) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://peptidelibrary.app/opengraph-image
+
+description: 'Peptide Library is an independent platform that provides searchable peptide profiles, vendor pricing comparison, concentration calculators, and research tracking tools for peptide research. It does not sell peptides and is intended for research and educational use only. The service offers free browser access and optional paid accounts for cloud sync and inventory management.'
+
 url: https://raw.githubusercontent.com/api-evangelist/peptidelibrary-app/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
-- Company
-apis: []
+- Peptide Research
+- Vendor Comparison
+- Research Tools
+- Inventory Management
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/peptidelibrary-app-rules.yml
+- type: Vocabulary
+  url: vocabulary/peptidelibrary-app-vocabulary.yml
+- type: Conformance
+  url: conformance/peptidelibrary-app-conformance.yml
+- type: LLMsTxt
+  url: llms/peptidelibrary-app-llms.txt
+- type: WellKnown
+  url: well-known/peptidelibrary-app-well-known.yml
+- type: Hosts
+  url: hosts/peptidelibrary-app-hosts.yml
+- type: Vendors
+  url: vendors/peptidelibrary-app-vendors.yml
+- type: TermsOfService
+  url: https://peptidelibrary.app/terms
+- type: Support
+  url: https://peptidelibrary.app/support
+- type: PrivacyPolicy
+  url: https://peptidelibrary.app/privacy
+- type: Login
+  url: https://peptidelibrary.app/sign-in
+- type: DeveloperPortal
+  url: https://peptidelibrary.app/developers
+- type: ChangeLog
+  url: https://peptidelibrary.app/developers/changelog
+- type: Blog
+  url: https://peptidelibrary.app/blog
+- type: APIReference
+  url: https://peptidelibrary.app/developers/docs
+- type: DomainSecurity
+  url: security/peptidelibrary-app-domain-security.yml
 - type: Website
   url: https://peptidelibrary.app/
+
+apis:
+- aid: peptidelibrary-app:peptidelibrary-app-api
+  name: peptidelibrary-app API
+  description: 'peptidelibrary-app API as documented publicly: 21 operations. Contract generated from the documentation by API Evangelist (2026-10-20);
+    not the provider''s own document.'
+  humanURL: https://peptidelibrary.app/developers/playground?endpoint=search
+  baseURL: https://api.peptidelibrary.app
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/peptidelibrary-app-openapi-generated.yml
+    x-provenance: generated
+
+x-coverage:
+  state: gated
+  reason: partner-login
+  method: derived
+  generated: '2026-10-20'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company serves an API surface but requires credentials before any description of it can be read
+  evidence:
+  - url: https://peptidelibrary.app/mcp
+    status: null
+  - url: https://api.peptidelibrary.app/openapi.json
+    status: null
+  - url: https://api.peptidelibrary.app/mcp
+    status: 403
+  - url: https://peptidelibrary.app/
+    status: 200
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 15
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

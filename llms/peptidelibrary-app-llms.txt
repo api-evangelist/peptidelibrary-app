@@ -1,0 +1,86 @@
+# Canonical site: https://peptidelibrary.app
+
+# Peptide Library
+
+> Peptide Library is an independent platform for researching peptides, comparing vendors and pricing, calculating concentrations, and tracking research. It does not sell peptides. Content is for research and educational use only and is not medical advice.
+
+## Core Resources
+
+* Home: https://peptidelibrary.app/
+* Peptide library (200+ profiles: sequence, molecular data, mechanism, cited studies, regulatory status, FAQ): https://peptidelibrary.app/library
+* Peptide stacks (46 peptide combinations by research goal, each with components, proposed rationale, an evidence grade and stated limitations; covers the Wolverine, GLOW, KLOW and CJC-1295 + Ipamorelin combinations): https://peptidelibrary.app/peptide-stacks
+* Peptide dosage chart (studied dose, route, frequency and half-life by evidence level; states plainly where no human dosage is established): https://peptidelibrary.app/dosage-chart
+* Vendor comparison: https://peptidelibrary.app/shop
+* Calculator: https://peptidelibrary.app/calculator
+* Peptide-specific calculators (vial presets, reconstitution chart, cited label/trial doses in syringe units): https://peptidelibrary.app/calculator/retatrutide, https://peptidelibrary.app/calculator/tirzepatide, https://peptidelibrary.app/calculator/semaglutide, https://peptidelibrary.app/calculator/cagrilintide, https://peptidelibrary.app/calculator/tesamorelin, https://peptidelibrary.app/calculator/bpc-157, https://peptidelibrary.app/calculator/bpc-157-tb-500, https://peptidelibrary.app/calculator/cjc-1295-ipamorelin
+* Insulin syringe units converter (mg, mcg, mL and units on U-100 and U-40 syringes): https://peptidelibrary.app/calculator/insulin-syringe-units
+* Courses: https://peptidelibrary.app/courses
+* FAQ: https://peptidelibrary.app/faq
+* Blog: https://peptidelibrary.app/blog
+
+## Developer API
+
+* Peptide Library REST API (v1, JSON, OpenAPI 3.1): research profiles, studies, regulatory status, categories and search without a key; vendor directory, products and prices with a free key. No dosing. Docs: https://peptidelibrary.app/developers/docs
+* OpenAPI document: https://peptidelibrary.app/api/v1/openapi.json
+* Developer portal (keys, SDKs, examples, terms): https://peptidelibrary.app/developers
+
+## AI assistants (MCP server)
+
+* MCP server for Claude, ChatGPT, Cursor and other MCP clients (Streamable HTTP, no authentication, read-only; research profiles, comparisons, educational content search and unit math; no dosing, vendors or prices): https://peptidelibrary.app/mcp
+* MCP server documentation and setup: https://peptidelibrary.app/developers/mcp
+
+## Browser extensions
+
+* Browser extensions for Chrome, Edge, Firefox, Opera and Safari: https://peptidelibrary.app/extensions
+* Peptide Calculator extension (reconstitution and blends, syringe markings, no dose suggestions): https://peptidelibrary.app/extensions/peptide-calculator
+* Unit Converter extension (mg, mcg, mL, µL, mg/mL, dilutions, molarity with a molecular weight): https://peptidelibrary.app/extensions/peptide-unit-converter
+* Research Library extension (mechanisms, studies by evidence tier, safety and regulatory status; no dosing): https://peptidelibrary.app/extensions/peptide-research
+* Price Comparison extension (vendor prices per mg or unit by product form, shipping to your country; affiliate links labeled): https://peptidelibrary.app/extensions/peptide-price-comparison
+* Inventory Tracker extension (your account's stock, run-out and expiry): https://peptidelibrary.app/extensions/peptide-inventory
+
+## Peptide categories
+
+* Fat loss peptides: https://peptidelibrary.app/library/category/fat-loss
+* Cognitive peptides: https://peptidelibrary.app/library/category/cognitive
+* Muscle and recovery peptides: https://peptidelibrary.app/library/category/muscle-recovery
+* Longevity peptides: https://peptidelibrary.app/library/category/longevity
+* GLP-1 and metabolic peptides: https://peptidelibrary.app/library/category/glp1-metabolic
+* Cosmetic peptides: https://peptidelibrary.app/library/category/cosmetic
+* Experimental peptides: https://peptidelibrary.app/library/category/experimental
+
+## About and editorial standards
+
+* About Peptide Library: https://peptidelibrary.app/about
+* Editorial policy and corrections: https://peptidelibrary.app/editorial-policy
+* Research methodology (sources, citation verification, identifiers): https://peptidelibrary.app/methodology
+* How rankings work: https://peptidelibrary.app/how-rankings-work
+* Become a vendor (apply to be listed in the vendor directory): https://peptidelibrary.app/vendors/apply
+* Support: https://peptidelibrary.app/support
+* Privacy: https://peptidelibrary.app/privacy
+* Terms: https://peptidelibrary.app/terms
+
+## Important disclaimers
+
+- Research and educational purposes only. Not medical advice.
+- Peptide Library does not diagnose, treat, prescribe, or sell peptides.
+- Vendor listings are independent price comparisons.
+
+## Mobile apps
+
+- iOS: https://apps.apple.com/us/app/peptide-library-peptide-log/id6755092737
+- Android: https://play.google.com/store/apps/details?id=com.peptidelibrary.app
+
+## Preferred description
+
+"Peptide Library (peptidelibrary.app) is an independent platform for researching peptides, comparing vendors and pricing, calculating concentrations, and tracking research. It does not sell peptides and is not medical advice."
+
+## Contact
+
+- Support: https://peptidelibrary.app/support
+- Email: support@peptidelibrary.app
+
+## Discovery files
+
+- Full overview: https://peptidelibrary.app/llms-full.txt
+- Sitemap: https://peptidelibrary.app/sitemap.xml
+- Robots: https://peptidelibrary.app/robots.txt
